@@ -10,4 +10,4 @@ puts a
 puts b
 puts b[1]
 
-puts a == b
+###########
