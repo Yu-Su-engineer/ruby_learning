@@ -6,8 +6,38 @@
 
 a = Array.new
 b = [1,2,3,'aa',[1,2,3]]
+c = []
+
 puts a
 puts b
 puts b[1]
+print b
+p b
+pp b
 
-###########
+#配列が空かどうかを確認する
+puts a.empty?
+# 配列に指定した要素があるかどうかを確認する
+puts a.include?('aa')
+#配列を逆順にするメソッド
+puts b.reverse
+#配列の要素をランダムにする
+puts b.shuffle
+
+#要素をただ並べた配列を宣言するとき
+x = (0..25).to_a
+p x
+
+#要素を追加する
+x << 20
+p x
+x.push(5)
+p x
+
+#末尾の要素を削除する
+p x.pop #戻り値に削除された要素が返ってくる
+p x
+
+#先頭の要素を削除する
+p x.shift
+p x
